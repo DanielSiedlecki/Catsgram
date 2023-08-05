@@ -1,27 +1,77 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+
+<div class="container">
+
+  <div class="app">
+  <home></home>
+
+
+  <nav-bar class="bottom-stick"></nav-bar>
+</div>
+
+</div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
 
+
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Home from './components/Home.vue';
+import NavBar from './components/NavBar.vue';
 export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+  
+  },
+
+
+
+  components:{
+    Home,
+    NavBar
   }
-});
+})
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+<style lang="scss" scoped>
+
+
+.container {
+  background-color: #E9ECEF;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+.app {
+  
+  width: 375px;
+  height: 667px;
+  border: 3px solid black; 
+  border-radius: 40px;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  position: relative;
+}
+
+.bottom-stick {
+  position: absolute;
+  width: 375px ;
+  bottom: 0;
+
+}
+
+
+
+
+
 </style>
+
+
+
+
