@@ -4,19 +4,19 @@
 
 
 <div class="home">
-    <span></span>
+    <span><i class="icon-home"></i></span>
 </div>
 <div class="search">
-    <span></span>
+    <span><i class="icon-search"></i></span>
 </div>
 <div class="new-post">
-    <span></span>
+    <span><i class="icon-plus"></i></span>
 </div>
 <div class="reels">
-    <span></span>
+    <span><i class="icon-video"></i></span>
 </div>
 <div class="myprofile">
-    <span></span>
+    <span><img src="../assets/avatars/Avatar_cat.png" alt="my_avatar"></span>
 </div>
 
 
@@ -33,14 +33,20 @@
         justify-content: space-around;
         align-items: center;
         
+        
 
 
     }
 
-    .home, .search , .reels , .new-post , .myprofile {
-        border: 1px solid black;
-        width: 32px;
-        height: 32px;
+    .home i, .search i, .reels i , .new-post i, .myprofile i{
+        font-size: 32px;
+    }
+
+    .myprofile img {
+        height: 36px;
+        width: 36px;
+        border-radius: 50px;
+        
     }
 
 

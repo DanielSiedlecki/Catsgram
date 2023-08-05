@@ -44,7 +44,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  
 }
 
 .app {
@@ -57,12 +57,17 @@ export default defineComponent({
   -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   position: relative;
+  z-index: 200;
+  background-color: white;
 }
 
 .bottom-stick {
   position: absolute;
   width: 375px ;
   bottom: 0;
+  display: flex;
+  
+  
 
 }
 
