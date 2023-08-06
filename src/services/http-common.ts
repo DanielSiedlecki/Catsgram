@@ -14,3 +14,17 @@ export async function fetchCats() {
     }
 
 }
+
+
+export async function fetchOneCat(){
+
+    try {
+        const response = await axios.get('https://api.thecatapi.com/v1/images/search')
+        return response
+    }
+
+    catch (error) {
+        console.log('Wysąpił błąd', error)
+        return null 
+    }
+}

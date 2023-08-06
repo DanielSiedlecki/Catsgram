@@ -10,7 +10,7 @@
     <span><i class="icon-search"></i></span>
 </div>
 <div class="new-post">
-    <span><i class="icon-plus"></i></span>
+    <span><i class="icon-plus-squared-alt"></i></span>
 </div>
 <div class="reels">
     <span><i class="icon-video"></i></span>
@@ -32,6 +32,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        background-color: white;
+        
         
         
 

@@ -11,7 +11,7 @@
     scale: 0.6;
     width: 64px;
     height: 64px;
-    border: 3px solid white;
+    border: 3px solid black;
     border-bottom-color: transparent;
     border-radius: 50%;
     display: inline-block;

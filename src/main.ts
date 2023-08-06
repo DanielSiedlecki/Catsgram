@@ -5,4 +5,5 @@ import './styles/GlobalStyles.scss'
 import './assets/fontello/css/fontello.css'
 
 
+
 createApp(App).mount('#app')

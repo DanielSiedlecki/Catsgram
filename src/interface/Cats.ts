@@ -5,3 +5,11 @@ export default interface CatsData {
     width: number;
     height: number;
 }
+
+
+export  interface CatData {
+
+    id: string;
+    url: string;
+    
+}

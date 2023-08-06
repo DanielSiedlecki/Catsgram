@@ -3,7 +3,7 @@
 <div class="container">
 
   <div class="app">
-  <home></home>
+  <home style="height: calc(100% - 80px);"></home>
 
 
   <nav-bar class="bottom-stick"></nav-bar>
@@ -44,6 +44,7 @@ export default defineComponent({
   display: flex;
   justify-content: center;
   align-items: center;
+ 
   
 }
 
@@ -52,20 +53,22 @@ export default defineComponent({
   width: 375px;
   height: 667px;
   border: 3px solid black; 
-  border-radius: 40px;
   -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
   box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-  position: relative;
-  z-index: 200;
   background-color: white;
+  position: relative;
+  
+  
 }
 
 .bottom-stick {
-  position: absolute;
   width: 375px ;
+  position: absolute;
   bottom: 0;
-  display: flex;
+  
+  
+  
   
   
 

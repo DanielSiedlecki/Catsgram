@@ -53,7 +53,7 @@
 
     .icons {
         display: flex;
-        margin-right: 1.5rem;
+        margin-right: 0.6rem;
         flex-direction: row;
         gap: 0.5rem;
         

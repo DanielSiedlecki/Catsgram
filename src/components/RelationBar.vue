@@ -8,10 +8,15 @@
        <div class="my-avatar">
         
         <img src="../assets/avatars/Avatar_cat.png"   style="height: 64px; width: 64px; border-radius: 40px;  " > <i class="icon-plus"></i> 
+        
        </div> 
         <div class="cats-avatar" v-for="cat in catsData" :key="cat.id">
-          <img v-if="!isLoading" :src="cat.url" :width="cat.width" :height="cat.height" alt="Cat" style="height: 62px; width: 62px; border-radius: 40px;" >
-          <loading-data-animation v-if="isLoading"/>
+           <span class="gradient-background"> 
+            <img v-if="!isLoading" :src="cat.url" :width="cat.width" :height="cat.height" alt="Cat" style="height: 60px; width: 60px; border-radius: 40px; border: 2px white solid;" >
+            </span>
+            <a class="name-profile" style="font-weight: 600; font-size: 0.6rem;">Name</a>
+      
+        
       
       </div>
 
@@ -71,9 +76,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
     .relation-bar {
-
+        
         width: 100% -10px;
-        height: 10%;
+        height: 15%;
         display: flex;
         overflow: auto;
         overflow-y: hidden;
@@ -85,14 +90,33 @@ export default defineComponent({
     .cats-avatar {
         display: flex;
         margin-top: 1px;
-         border-radius: 100%;
-        background: linear-gradient(to right, red, purple);
-        padding:2px ;
+        border-radius: 100%;
         justify-content: center;
         align-items: center;
-        
+        flex-direction: column;
+
+
+        .gradient-background {  
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            border-radius: 100%;
+            position: relative;
+            display: flex;
+            padding: 1px;
+        }
     }
+
+
+
+
+    .name-profile {
+        font-size: 0.5rem;
+    }
+
+    
     .my-avatar {
+        
          position: relative;
         display: inline-block;
     }
