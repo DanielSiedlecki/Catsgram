@@ -13,3 +13,10 @@ export  interface CatData {
     url: string;
     
 }
+
+export  interface localCatData { 
+    id: number;
+    url: string;
+}
+
+

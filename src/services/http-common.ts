@@ -1,6 +1,5 @@
 import axios from "axios";
 
-
 export async function fetchCats() {
     
     try {
@@ -28,3 +27,4 @@ export async function fetchOneCat(){
         return null 
     }
 }
+

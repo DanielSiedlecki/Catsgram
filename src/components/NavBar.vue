@@ -3,7 +3,7 @@
 <div class="lower_navbar">
 
 
-<div class="home">
+<div class="home ">
     <span><i class="icon-home"></i></span>
 </div>
 <div class="search">
@@ -22,6 +22,27 @@
 
 </div>
 </template>
+
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+
+export default defineComponent({
+    setup() {
+        
+    },
+
+    components: {
+        
+    },
+    methods: {
+        
+    }
+})
+</script>
+
+
 <style lang="scss" scoped>
 
     .lower_navbar {

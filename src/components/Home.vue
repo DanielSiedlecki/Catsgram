@@ -13,6 +13,9 @@
 
 
     </div>
+
+
+
 </template>
 
 <script lang="ts">
@@ -64,6 +67,7 @@ export default defineComponent({
 
             if (newData) {
                 this.catsData = this.catsData.concat(newData)
+              
             }
         },
 
@@ -73,7 +77,7 @@ export default defineComponent({
                 const scrollPosition = scrollContainer.scrollTop;
 
                 
-                console.log('Scroll position:', scrollPosition);
+               
                 if (scrollPosition >= 5181) {
                     this.isLoading = true
                     this.getMoreCatImages()

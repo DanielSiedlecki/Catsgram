@@ -12,16 +12,26 @@
        </div> 
         <div class="cats-avatar" v-for="cat in catsData" :key="cat.id">
            <span class="gradient-background"> 
-            <img v-if="!isLoading" :src="cat.url" :width="cat.width" :height="cat.height" alt="Cat" style="height: 60px; width: 60px; border-radius: 40px; border: 2px white solid;" >
+            <img v-if="!isLoading" :src="cat.url" :width="cat.width" :height="cat.height" alt="Cat" style="height: 60px; width: 60px; border-radius: 40px; border: 2px white solid;" @click="isView()" >
             </span>
             <a class="name-profile" style="font-weight: 600; font-size: 0.6rem;">Name</a>
       
         
-      
+        
+    
+        
       </div>
+      <teleport to="#modal">
+      <stories-view v-if="RelationView" @closeWindow="closeWindow" ></stories-view>
+
+
+      </teleport>
 
 
     </div>
+    
+   
+
 
 </template>
 
@@ -32,9 +42,10 @@ import { defineComponent } from 'vue'
 import { fetchCats } from '../services/http-common'
 import CatsData from '@/interface/Cats'
 import LoadingDataAnimation from './Elements/LoadingDataAnimation.vue'
+import StoriesView from './Elements/StoriesView.vue'
 export default defineComponent({
 
-    components:{LoadingDataAnimation},
+    components:{ LoadingDataAnimation, StoriesView },
     mounted() {
         this.getCatsAvatar()
     },
@@ -44,7 +55,8 @@ export default defineComponent({
 
         return { 
             catsData: [] as CatsData[],
-            isLoading: true
+            isLoading: true,
+            RelationView: false
 
 
         }
@@ -66,6 +78,15 @@ export default defineComponent({
             catch (error) {
                 console.log(error)
             }
+        },
+
+        isView() {
+            this.RelationView = true
+            console.log(this.RelationView)
+        },
+
+        closeWindow() {
+            this.RelationView = false
         }
     }
 
@@ -85,6 +106,7 @@ export default defineComponent({
         gap: 0.5rem;
         margin-left: 10px;
         margin-top: 0.2rem;
+        
     }
 
     .cats-avatar {

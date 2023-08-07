@@ -3,7 +3,9 @@
 <div class="container">
 
   <div class="app">
-  <home style="height: calc(100% - 80px);"></home>
+
+
+  <router-view style="height: calc(100% - 80px);"></router-view>
 
 
   <nav-bar class="bottom-stick"></nav-bar>
