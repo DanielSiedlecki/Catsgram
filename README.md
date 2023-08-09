@@ -1,5 +1,5 @@
 
-![](https://github.com/DanielSiedlecki/Catsgram/demo.gif)
+![](https://github.com/DanielSiedlecki/Catsgram/blob/main/demo.gif)
 ![](https://zapodaj.net/thumbs/aa2643982cf23.jpg)
 
 
