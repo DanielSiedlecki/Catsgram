@@ -13,13 +13,14 @@ I love cats, that's why I created CatsGram. It's a fake Instagram, but it only d
 In my project, I wanted to showcase my ability to use CSS/SCSS and work with external APIs as well as local JSON files in Javascript/TypeScript.
 I utilized only: Pure CSS, the AXIOS library for fetching data from APIs, and Icons from Bootstrap and Fontello.
 
-##Docs
-###Link
+## Docs
+
+### Link
 API: https://developers.thecatapi.com/view-account/ylX4blBYT9FaoVd6OhvR?report=bOoHBz-8t
 
 Demo: https://catsgram-mobile.netlify.app/
 
-###Actually Functions
+### Actually Functions
 - Home => It displays cat photos infinitely and allows opening 'relations' through the relations bar, which automatically close after 5 seconds. We can add heart beneath each post.
 
 - Search => It displays 100 cat photos.
@@ -28,7 +29,7 @@ Demo: https://catsgram-mobile.netlify.app/
 
 In the near future i add animations and many more.
 
-###Run
+### Run
 **First step**
 `npm install` 
 **Second step **
