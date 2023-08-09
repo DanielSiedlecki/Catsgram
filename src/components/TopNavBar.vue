@@ -2,7 +2,7 @@
     
     <div class="nav-bar">
 
-       <span class="text"><a>Dla Ciebie</a>  </span>
+       <span class="text"><a>For you</a>  </span>
 
 
 

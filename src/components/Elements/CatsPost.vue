@@ -4,7 +4,7 @@
         <div class="profile-name-bar">
             <span style="display: flex; align-items: center;">
             
-                <img src="../../assets/avatars/Avatar_cat.png" style="width: 32px; height: 32px; border-radius: 50px;"> <a class="profile-name" style="margin-left: 0.3rem; font-weight: 600; font-size: 0.8rem;">Custom_Name</a>
+                <img src="../../assets/avatars/Avatar_cat.png" alt="profile-avatar" style="width: 32px; height: 32px; border-radius: 50px;"> <a class="profile-name" style="margin-left: 0.3rem; font-weight: 600; font-size: 0.8rem;">Custom_Name</a>
             
         
         </span>
@@ -18,8 +18,8 @@
         </div>
 
         
-
-        <img :src="url" alt="cats_foto" style="height: 400px; width: 100%;" >
+        <loading-data-animation v-if="isLoading"></loading-data-animation>
+        <img :src="url" alt="cats_foto" style="height: 400px; width: 100%;" @load="handleImageLoad">
 
         
         <div class="lower_bar">
@@ -59,16 +59,20 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import LoadingDataAnimation from './LoadingDataAnimation.vue'
 
 export default defineComponent({
 
-    setup() {
-
-
+    components: {
+        LoadingDataAnimation
     },
     data(){
-        return {
-            isActive: false
+        
+        {
+            return {
+                isActive: false,
+                isLoading: true
+            }
         }
     },
     
@@ -76,6 +80,11 @@ export default defineComponent({
         url: String,
 
 
+    },
+    methods: {
+        handleImageLoad() {
+            this.isLoading = false;
+        }
     }
 })
 </script>

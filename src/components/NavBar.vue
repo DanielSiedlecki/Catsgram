@@ -2,23 +2,37 @@
     
 <div class="lower_navbar">
 
-
-<div class="home ">
+<router-link to="/">
+<div class="home  " >
     <span><i class="icon-home"></i></span>
 </div>
+
+</router-link>
+
+<router-link to="/search">
 <div class="search">
     <span><i class="icon-search"></i></span>
 </div>
+    </router-link>
+
+<router-link to="/newpost">    
 <div class="new-post">
     <span><i class="icon-plus-squared-alt"></i></span>
 </div>
+    </router-link>
+
+
+    <router-link to="/reels">    
 <div class="reels">
     <span><i class="icon-video"></i></span>
 </div>
+    </router-link>
+
+    <router-link to="/myprofile">
 <div class="myprofile">
     <span><img src="../assets/avatars/Avatar_cat.png" alt="my_avatar"></span>
 </div>
-
+    </router-link>
 
 </div>
 </template>
@@ -63,7 +77,10 @@ export default defineComponent({
 
     .home i, .search i, .reels i , .new-post i, .myprofile i{
         font-size: 32px;
+        color: black;
     }
+
+    
 
     .myprofile img {
         height: 36px;

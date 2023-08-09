@@ -36,7 +36,7 @@ export default defineComponent({
 </script>
 
 
-<style lang="scss" scoped>
+<style scoped lang="scss" >
 
 
 .container {
@@ -44,6 +44,7 @@ export default defineComponent({
   width: 100vw;
   height: 100vh;
   display: flex;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
  

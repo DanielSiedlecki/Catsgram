@@ -19,7 +19,7 @@ export async function fetchOneCat(){
 
     try {
         const response = await axios.get('https://api.thecatapi.com/v1/images/search')
-        return response
+        return response.data
     }
 
     catch (error) {
